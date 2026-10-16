@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F1EFEC" />
+  <meta name="description" content="花事 Flower · Matter · Studio｜孫亞雯創辦的花藝工作室。客製花禮、空間佈置、系統化花藝課程與單堂體驗，讓生活與花相遇。" />
+  <meta property="og:title" content="花事 Flower Matter Studio｜客製花禮與花藝課程" />
+  <meta property="og:description" content="讓生活與花相遇，讓美好悄然綻放。探索花事的自然花藝、專業教學與客製設計。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:site_name" content="花事 Flower Matter Studio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="花事 Flower Matter Studio｜客製花禮與花藝課程" />
+  <meta name="twitter:description" content="探索花事的客製花禮、婚禮捧花、單堂花藝體驗與專業系列課程。透過 LINE 或需求表單，開始您的花藝提案。" />
+  <link rel="icon" type="image/png" href="photos01/logo.png" />
+  <link rel="preload" as="image" href="photos01/1.1.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "花事 Flower Matter Studio",
+    "alternateName": "花事",
+    "description": "由孫亞雯創辦的花藝工作室，提供客製花禮、婚禮捧花、空間佈置、單堂花藝體驗與專業花藝系列課程。",
+    "founder": { "@type": "Person", "name": "孫亞雯" },
+    "sameAs": ["https://line.me/ti/p/WQzg3KWYMd"],
+    "knowsAbout": ["花藝設計", "客製花禮", "婚禮捧花", "花藝課程", "空間佈置"]
+  }
+  </script>
+  <title>花事 Flower Matter Studio｜客製花禮・花藝課程・婚禮捧花</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <script>
+    tailwind.config = { theme: { extend: { colors: { sage:'#8E9C8B', cream:'#F1EFEC', rose:'#C89B93', forest:'#34453B', champagne:'#C89B93', mist:'#F1EFEC', ink:'#151313', warm:'#D7D0C9', accent:'#E54545' }, fontFamily: { sans:['Noto Sans TC','sans-serif'], serif:['Noto Sans TC','sans-serif'], display:['Noto Sans TC','sans-serif'] } } } };
+  </script>
+  <style>
+    :root { --sage:#8E9C8B; --cream:#F1EFEC; --rose:#C89B93; --forest:#34453B; --gold:#C89B93; --ink:#151313; --warm:#D7D0C9; --accent:#E54545; }
+    *,*::before,*::after { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:90px; }
+    body { margin:0; color:var(--forest); background:#F1EFEC; overflow-x:hidden; font-family:'Noto Sans TC',sans-serif; }
+    body.modal-open { overflow:hidden; }
+    ::selection { background:#D7D0C9; color:var(--forest); }
+    a,button { -webkit-tap-highlight-color:transparent; }
+    button:focus-visible,a:focus-visible { outline:2px solid var(--accent); outline-offset:4px; }
+    h1,h2,h3,h4 { color:var(--ink); }
+    .hero h1 { color:var(--cream); }
+    #about,#portfolio,#contact-me,#contact { background:linear-gradient(180deg,var(--cream),rgba(215,208,201,.3)); }
+    #booking { background:var(--warm); }
+    .eyebrow.text-sage { color:var(--forest); }
+    a.border-sage:hover { color:var(--accent); border-color:var(--accent); }
+    a.service-card:hover { color:var(--accent); }
+    .editorial { font-family:'Noto Sans TC',sans-serif; font-weight:400; line-height:1.65; }
+    .display { font-family:'Noto Sans TC',sans-serif; }
+    .eyebrow { font:500 11px/1.5 'Noto Sans TC',sans-serif; letter-spacing:.32em; text-transform:uppercase; }
+    .site-nav { transition:background .45s ease, box-shadow .45s ease, padding .45s ease; }
+    .site-nav.is-scrolled { background:rgba(241,239,236,.95); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); box-shadow:0 8px 34px rgba(21,19,19,.065); }
+    .nav-link { position:relative; padding-bottom:7px; }
+    .nav-link::after { content:''; position:absolute; bottom:0; left:0; width:0; height:1px; background:var(--accent); transition:width .3s; }
+    .nav-link:hover::after,.nav-link[aria-current="true"]::after { width:100%; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:18px; min-height:52px; padding:13px 26px; font-size:12px; letter-spacing:.13em; border:1px solid var(--sage); background:rgba(241,239,236,.95); color:var(--forest); transition:background .35s,color .35s,transform .35s,box-shadow .35s; }
+    .btn:hover { background:var(--accent); color:var(--cream); transform:translateY(-3px); box-shadow:0 12px 32px rgba(229,69,69,.18); }
+    .btn .arrow { transition:transform .3s; }
+    .btn:hover .arrow { transform:translateX(5px); }
+    .btn-dark { background:var(--accent); border-color:var(--accent); color:var(--ink); }
+    .btn-dark:hover { background:var(--rose); border-color:var(--rose); color:var(--ink); }
+    .hero { min-height:730px; min-height:100svh; position:relative; isolation:isolate; background:#D7D0C9; }
+    .hero-photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 49%; }
+    .hero::before { content:''; position:absolute; inset:0; z-index:1; background:linear-gradient(90deg,rgba(21,19,19,.61) 0%,rgba(21,19,19,.39) 46%,rgba(21,19,19,.04) 100%),linear-gradient(0deg,rgba(21,19,19,.28),transparent 40%); }
+    .hero-content { position:relative; z-index:2; }
+    .hero-script { font-style:italic; letter-spacing:.08em; }
+    .type-cursor { display:inline-block; width:1px; height:1em; background:#F1EFEC; margin-left:5px; vertical-align:-.1em; animation:blink .8s steps(1) infinite; }
+    @keyframes blink { 50% { opacity:0; } }
+    .hero-frame { position:absolute; inset:26px; border:1px solid rgba(241,239,236,.25); z-index:1; pointer-events:none; }
+    .vertical-note { writing-mode:vertical-rl; letter-spacing:.36em; }
+    .section-number { font:italic 22px 'Noto Sans TC',sans-serif; color:var(--gold); }
+    .reveal { opacity:0; transform:translateY(32px); transition:opacity .85s ease,transform .85s cubic-bezier(.2,.8,.2,1); }
+    .reveal.is-visible { opacity:1; transform:none; }
+    .reveal.delay-1 { transition-delay:.10s; } .reveal.delay-2 { transition-delay:.2s; } .reveal.delay-3 { transition-delay:.3s; }
+    .soft-orb { position:absolute; width:340px; height:340px; border-radius:50%; background:radial-gradient(circle,rgba(200,155,147,.15),transparent 72%); filter:blur(8px); pointer-events:none; }
+    .botanical-line { position:absolute; opacity:.14; pointer-events:none; }
+    .image-wrap { position:relative; overflow:hidden; background:#D7D0C9; }
+    .image-wrap img { height:100%; width:100%; object-fit:cover; transition:transform .85s cubic-bezier(.2,.7,.2,1); }
+    .image-wrap:hover img { transform:scale(1.045); }
+    .image-wrap::after { content:''; position:absolute; inset:0; background:linear-gradient(0deg,rgba(21,19,19,.48),transparent 48%); opacity:.7; pointer-events:none; }
+    .work-card { position:relative; display:block; cursor:zoom-in; text-align:left; border:0; padding:0; width:100%; color:white; background:#D7D0C9; overflow:hidden; }
+    .work-card img { height:100%; width:100%; object-fit:cover; transition:transform .85s; }
+    .work-card:hover img { transform:scale(1.06); }
+    .work-card::after { content:''; position:absolute; inset:0; background:linear-gradient(0deg,rgba(21,19,19,.69),transparent 55%); }
+    .work-meta { position:absolute; z-index:1; bottom:23px; left:24px; right:22px; opacity:.92; transform:translateY(3px); transition:transform .35s,opacity .35s; }
+    .work-card:hover .work-meta { transform:none; opacity:1; }
+    .work-card .zoom-icon { position:absolute; z-index:1; top:18px; right:18px; opacity:0; transform:translateY(6px); transition:.3s; }
+    .work-card:hover .zoom-icon,.work-card:focus-visible .zoom-icon { opacity:1; transform:none; }
+    .service-card { border:1px solid #D7D0C9; background:var(--cream); transition:transform .4s,box-shadow .4s,border-color .4s; }
+    .service-card:hover { transform:translateY(-7px); box-shadow:0 22px 60px rgba(21,19,19,.08); border-color:#D7D0C9; }
+    .fine-rule { height:1px; background:linear-gradient(90deg,transparent,#D7D0C9,transparent); }
+    .mobile-menu { visibility:hidden; opacity:0; transform:translateY(-8px); transition:.25s ease; }
+    .mobile-menu.is-open { visibility:visible; opacity:1; transform:none; }
+    .lightbox { position:fixed; z-index:100; inset:0; display:none; align-items:center; justify-content:center; padding:36px; background:rgba(21,19,19,.92); }
+    .lightbox.is-open { display:flex; }
+    .lightbox img { max-height:82vh; max-width:min(90vw,1000px); object-fit:contain; box-shadow:0 30px 90px rgba(21,19,19,.24); }
+    .lightbox-close { position:absolute; top:20px; right:24px; font-size:36px; color:var(--cream); line-height:1; }
+    .placeholder { position:absolute; inset:0; background:linear-gradient(140deg,#8E9C8B,#D7D0C9 50%,#8E9C8B); display:flex; align-items:center; justify-content:center; color:#34453B; font:italic 24px 'Noto Sans TC',sans-serif; text-align:center; padding:20px; }
+    .placeholder::before { content:'✿'; position:absolute; font-size:130px; opacity:.10; }
+    .img-with-fallback { position:relative; isolation:isolate; }
+    .img-with-fallback img { position:relative; z-index:1; }
+    .img-with-fallback img.image-failed { opacity:0; }
+    @media (max-width:767px) {
+      .hero { min-height:680px; min-height:100svh; }
+      .hero::before { background:linear-gradient(90deg,rgba(21,19,19,.64),rgba(21,19,19,.25)),linear-gradient(0deg,rgba(21,19,19,.30),transparent); }
+      .hero-photo { object-position:57% center; }
+      .hero-frame { inset:13px; }
+      .work-meta { bottom:16px; left:17px; }
+      .lightbox { padding:14px; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto; }
+      *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; }
+      .reveal { opacity:1; transform:none; }
+      .type-cursor { display:none; }
+    }
+    /* 統一的品牌版面、字級與作品呈現 */
+    :root { --font-brand:'Noto Sans TC',sans-serif; --page-width:1200px; }
+    body { font-family:var(--font-brand); font-size:16px; line-height:1.85; -webkit-font-smoothing:antialiased; }
+    .editorial,.display,.eyebrow,.section-number,.placeholder { font-family:var(--font-brand); font-style:normal; }
+    .editorial { font-weight:500; line-height:1.65; letter-spacing:.02em; }
+    .display { font-weight:400; }
+    .display.italic { font-style:normal; }
+    .eyebrow { font-size:11px; font-weight:500; letter-spacing:.18em; line-height:1.7; }
+    h2.editorial { font-size:clamp(1.8rem,3.2vw,2.7rem); line-height:1.55; }
+    h3.editorial { line-height:1.6; }
+    .font-light { font-weight:400; }
+    main p.text-sm,main p.md\:text-base { font-size:15px; line-height:2; }
+    .text-sage { color:var(--forest); }
+    .text-champagne { color:var(--forest); }
+    .section-number { font-size:13px; color:var(--forest); }
+    main > section { padding-top:96px; padding-bottom:96px; }
+    main > section > div.max-w-\[1320px\] { max-width:var(--page-width); }
+    #about,#portfolio,#contact-me,#contact { background:var(--cream); }
+    #core-products { background:rgba(215,208,201,.28); }
+    #booking { background:var(--forest); color:var(--cream); }
+    #booking h2,#booking p,#booking .display { color:var(--cream); }
+    #booking .border { opacity:.2; }
+    #booking .bg-champagne { background:var(--rose); }
+    #contact { padding-bottom:0; border-top:1px solid var(--warm); }
+    #about > div + div { margin-top:80px; }
+    #about .mt-20 { margin-top:56px; }
+    #about figure { border-radius:120px 120px 8px 8px; background:rgba(215,208,201,.18); }
+    #about figure img { max-width:250px; }
+    #about .image-wrap { border-radius:8px; }
+    .site-nav { background:rgba(241,239,236,.97); color:var(--ink)!important; border-bottom:1px solid rgba(215,208,201,.6); }
+    .site-nav > div { max-width:1320px; height:86px; }
+    .nav-logo { display:block; width:72px; height:72px; object-fit:contain; mix-blend-mode:multiply; }
+    .nav-link { font-size:13px; letter-spacing:.03em; padding:12px 0; }
+    .mobile-menu a { min-height:44px; display:flex; align-items:center; }
+    .hero { min-height:0; padding:136px 48px 64px; display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; max-width:1320px; margin:auto; background:var(--cream); }
+    .hero::before { display:none; }
+    .hero-content { padding:0; color:var(--forest); }
+    .hero .eyebrow { color:var(--forest); }
+    .hero-kicker { font-size:13px; margin:22px 0; letter-spacing:.07em; }
+    .hero h1 { color:var(--ink); font-size:clamp(2rem,3.3vw,3rem); font-weight:500; line-height:1.65; letter-spacing:.025em; }
+    .hero-description { font-size:15px; line-height:2.1; margin-top:24px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
+    .hero-scroll { display:inline-flex; align-items:center; gap:24px; font-size:12px; margin-top:40px; padding:8px 0; }
+    .hero-art { min-width:0; margin:0; padding:12px; border:1px solid var(--warm); border-radius:180px 180px 12px 12px; background:rgba(215,208,201,.2); }
+    .hero .hero-photo { position:static; width:100%; height:auto; aspect-ratio:1; display:block; object-fit:cover; border-radius:170px 170px 4px 4px; }
+    .hero-art figcaption { display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; font-size:11px; padding:16px 6px 4px; }
+    .hero + section { padding-top:64px; padding-bottom:64px; border-top:1px solid var(--warm); border-bottom:1px solid var(--warm); }
+    .hero + section .editorial { font-size:clamp(1.35rem,2.3vw,1.9rem); }
+    .hero + section .my-10 { margin-top:24px; margin-bottom:24px; }
+    .btn { border-radius:6px; min-height:50px; padding:13px 22px; font-size:13px; font-weight:500; letter-spacing:.04em; text-decoration:none; }
+    .btn:hover { background:var(--warm); color:var(--ink); transform:translateY(-2px); box-shadow:0 6px 18px rgba(21,19,19,.07); }
+    .btn-dark { background:var(--accent); border-color:var(--accent); color:var(--ink); }
+    .btn-dark:hover { background:var(--rose); border-color:var(--rose); }
+    .service-card { border-radius:12px; box-shadow:0 4px 20px rgba(21,19,19,.025); }
+    .service-card:hover { transform:translateY(-3px); box-shadow:0 12px 28px rgba(21,19,19,.06); border-color:var(--sage); }
+    #core-products .service-card { padding:32px; }
+    #core-products .service-card h3 { font-size:21px; }
+    #core-products .service-card p { font-size:15px; }
+    #core-products a,#contact-me a { min-height:44px; }
+    #contact-me > div > .bg-cream { border-radius:12px; background:rgba(215,208,201,.24); }
+    #contact-me ul > li > div { border-radius:12px; border-style:dashed; }
+    #portfolio .work-card { background:transparent; border:1px solid var(--warm); border-radius:10px; aspect-ratio:auto; padding:10px; display:flex; flex-direction:column; }
+    #portfolio .work-card::after { display:none; }
+    #portfolio .work-card img { width:100%; height:auto; aspect-ratio:3/4; object-fit:contain; background:rgba(215,208,201,.25); border-radius:5px; }
+    #portfolio .work-card:hover img { transform:scale(1.015); }
+    #portfolio .work-meta { position:static; transform:none; opacity:1; display:block; padding:18px 10px 12px; color:var(--ink); }
+    #portfolio .work-meta .eyebrow { color:var(--forest); font-size:10px; }
+    #portfolio .work-meta .editorial { font-size:17px; }
+    #portfolio .zoom-icon { background:var(--cream); color:var(--ink); border-radius:50%; width:36px; height:36px; display:grid; place-items:center; opacity:1; transform:none; }
+    #portfolio .placeholder { display:none; }
+    .image-wrap::after { display:none; }
+    /* 統一輕微降彩與暖調，原始作品檔案與燈箱色彩保留。 */
+    .hero-photo,.image-wrap img,.work-card img { filter:saturate(.91) contrast(.98) sepia(.035); }
+    .img-with-fallback img.hero-photo { position:absolute; }
+    .image-wrap img,.work-card img { display:block; }
+    .reveal { opacity:1; transform:none; }
+    .skip-link { position:fixed; left:16px; top:-100px; z-index:200; background:var(--ink); color:var(--cream); padding:12px 20px; border-radius:6px; }
+    .skip-link:focus { top:12px; }
+    .lightbox-close { width:48px; height:48px; }
+    .lightbox figure { margin:0; }
+    footer a { display:inline-flex; align-items:center; min-height:44px; }
+    @media (max-width:1023px) {
+      .hero { gap:32px; padding-left:28px; padding-right:28px; }
+      .hero-actions .btn { padding-left:16px; padding-right:16px; }
+    }
+    @media (max-width:767px) {
+      main > section { padding-top:64px; padding-bottom:64px; }
+      .site-nav > div { height:76px; }
+      .nav-logo { width:62px; height:62px; }
+      .hero { grid-template-columns:1fr; padding:112px 24px 48px; gap:32px; }
+      .hero h1 { font-size:clamp(1.9rem,7vw,2.6rem); }
+      .hero-kicker { font-size:12px; margin:16px 0; }
+      .hero-description { font-size:14px; margin-top:20px; }
+      .hero-scroll { display:none; }
+      .hero-art { width:100%; max-width:480px; margin:auto; border-radius:140px 140px 10px 10px; }
+      .hero .hero-photo { border-radius:130px 130px 4px 4px; }
+      .hero-actions { gap:10px; }
+      .hero-actions .btn { flex:1; padding:12px 10px; font-size:12px; gap:8px; }
+      #about > div + div { margin-top:56px; }
+      #portfolio .grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+      #portfolio .work-card { padding:6px; }
+      #portfolio .work-meta { padding:12px 4px 8px; }
+      #portfolio .work-meta .editorial { font-size:14px; }
+      #portfolio .work-meta .eyebrow { font-size:9px; letter-spacing:.08em; }
+      #portfolio .zoom-icon { top:12px; right:12px; width:28px; height:28px; }
+      #core-products .service-card { padding:28px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳至主要內容</a>
+  <!-- 花事品牌網站：作品圖片保留原始檔案。 -->
+  <!-- 導覽列 -->
+  <header id="site-nav" class="site-nav fixed z-50 top-0 left-0 w-full text-cream">
+    <div class="mx-auto max-w-[1440px] px-6 md:px-12 xl:px-20 flex items-center justify-between h-[82px] md:h-[94px]">
+      <a href="#home" class="relative z-20 flex flex-col leading-none" aria-label="花事，返回首頁">
+        <img class="nav-logo" src="photos01/logo.png" alt="花事 Flower · Matter · Studio" width="72" height="72" />
+      </a>
+      <nav class="hidden lg:flex gap-8 xl:gap-11 items-center text-[12px] tracking-[.13em]" aria-label="主導覽">
+        <a class="nav-link" href="#home">首頁</a><a class="nav-link" href="#about">關於我</a><a class="nav-link" href="#core-products">花藝服務</a><a class="nav-link" href="#portfolio">作品集</a><a class="nav-link" href="#booking">預約諮詢</a><a class="nav-link" href="#contact-me">聯絡我</a>
+      </nav>
+      <button id="menu-toggle" class="lg:hidden relative z-20 p-3 -mr-3" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="開啟導覽選單">
+        <span class="block w-6 h-[1px] bg-current mb-[7px]"></span><span class="block w-6 h-[1px] bg-current"></span>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="mobile-menu lg:hidden absolute w-full top-full left-0 bg-[#F1EFEC] text-forest shadow-xl px-8 py-7" aria-label="手機導覽" inert>
+      <div class="flex flex-col gap-5 tracking-[.17em] text-sm">
+        <a href="#home">首頁 Home</a><a href="#about">關於我 About</a><a href="#core-products">花藝服務 Services</a><a href="#portfolio">作品集 Portfolio</a><a href="#booking">預約諮詢 Booking</a><a href="#contact-me">聯絡我 Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <!-- 01 首頁 -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">FLOWER · MATTER · STUDIO</p>
+        <p class="hero-kicker">客製花禮 / 花藝課程 / 婚禮花藝</p>
+        <h1>讓生活與花相遇，<br />讓美好悄然綻放。</h1>
+        <p class="hero-description">一份心意，一段學習，一個值得紀念的日子。<br class="hidden sm:block" />讓花事陪您，用花說出心中的故事。</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="#portfolio">欣賞花藝作品 <span class="arrow" aria-hidden="true">↗</span></a><a class="btn" href="#core-products">探索課程與服務 <span class="arrow" aria-hidden="true">→</span></a></div>
+        <a href="#about" class="hero-scroll">認識花事 <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="hero-art">
+        <img class="hero-photo" src="photos01/1.1.png" alt="花事客製花籃：粉色玫瑰、康乃馨與非洲菊交織的繽紛花禮" width="1100" height="1100" fetchpriority="high" />
+        <figcaption><span>01 / 精選作品</span><span>把日常，過成有花的樣子。</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- 品牌導言 -->
+    <section class="relative overflow-hidden bg-cream py-24 md:py-36 px-6">
+      <div class="soft-orb right-0 top-0"></div>
+      <div class="max-w-[800px] mx-auto text-center reveal">
+        <p class="eyebrow text-sage mb-8">The philosophy of flowers</p>
+        <p class="editorial text-[clamp(1.45rem,2.65vw,2.6rem)] leading-[2.0] tracking-[.055em]">花藝不只是花材的排列，<br class="hidden sm:block" />而是一種感受生活的方式。</p>
+        <div class="w-12 h-px bg-champagne mx-auto my-10"></div>
+        <p class="text-[#34453B] text-sm md:text-base font-light leading-[2.3] max-w-2xl mx-auto">我們相信每個人都有創造美的能力。讓專業不再遙遠，讓一朵花、一個瞬間，都成為日常裡值得珍藏的風景。</p>
+      </div>
+    </section>
+
+    <!-- 02 關於我 -->
+    <section id="about" class="relative bg-cream py-24 md:py-36 overflow-hidden">
+      <div class="max-w-[1320px] mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
+        <div class="relative reveal">
+          <figure class="border border-[#D7D0C9] bg-cream p-8 md:p-12 text-center">
+            <img src="photos01/logo.png" alt="花事 Flower · Matter · Studio 品牌 LOGO" width="1183" height="1182" loading="lazy" class="w-full max-w-[300px] mx-auto aspect-square object-contain" style="mix-blend-mode:multiply" />
+            <figcaption class="mt-7"><p class="eyebrow text-forest">Flower · Matter · Studio</p><p class="editorial text-xl mt-4">以花為媒，讓美好發生。</p></figcaption>
+          </figure>
+          <div class="grid grid-cols-2 gap-4 mt-4" aria-label="花事精選花籃作品">
+            <div class="image-wrap aspect-square"><img loading="lazy" src="photos01/1.1.png" alt="花事繽紛花籃作品" /></div>
+            <div class="image-wrap aspect-square"><img loading="lazy" src="photos01/2.png" alt="花事玫瑰花籃作品" /></div>
+          </div>
+        </div>
+        <div class="reveal delay-1">
+          <p class="eyebrow text-sage flex items-center gap-4"><span class="section-number">02</span> About the founder</p>
+          <h2 class="editorial text-[clamp(2rem,3.2vw,3.4rem)] mt-6 leading-[1.6]">在花之間，<br />遇見人生新的可能。</h2>
+          <p class="display italic text-sage text-lg mt-5">“It's never too late to bloom.”</p>
+          <div class="w-14 h-px bg-champagne my-9"></div>
+          <h3 class="editorial text-xl mb-6">孫亞雯 <span class="text-sm font-sans font-light text-[#34453B] ml-2">｜花事創辦人</span></h3>
+          <div class="space-y-5 text-sm md:text-[15px] text-[#34453B] leading-[2.25] font-light">
+            <p>我是一位在中年時期，才與花藝相遇的創作者。從喜愛花草開始，歷經五年的專業學習，再到創立「花事」，我深深相信：美的創造，從不受年齡限制。</p>
+            <p>擁有 DFA／ADFA 花藝專業證照，以及兩年的花藝實務工作經驗。我將結構、色彩與比例的專業訓練，結合自然靈感與溫暖教學，讓花藝成為每個人都能親近的生活藝術。</p>
+          </div>
+          <div class="mt-9 flex flex-wrap gap-3"><span class="border border-[#D7D0C9] text-[11px] tracking-[.1em] px-4 py-2">DFA / ADFA 專業證照</span><span class="border border-[#D7D0C9] text-[11px] tracking-[.1em] px-4 py-2">五年專業學習</span><span class="border border-[#D7D0C9] text-[11px] tracking-[.1em] px-4 py-2">兩年實務經驗</span></div>
+        </div>
+      </div>
+      <div class="max-w-[1320px] mx-auto px-6 md:px-12 mt-28 md:mt-40">
+        <div class="text-center reveal"><p class="eyebrow text-sage mb-5">What I believe</p><h3 class="editorial text-3xl md:text-4xl">四個信念，一份對花的熱愛</h3></div>
+        <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-9 lg:gap-8">
+          <div class="reveal"><span class="display italic text-4xl text-champagne">01.</span><div class="h-px bg-[#D7D0C9] my-5"></div><h4 class="editorial text-lg mb-4">專業為本</h4><p class="text-sm leading-[2.1] text-[#34453B] font-light">重視花藝的結構、色彩、比例與層次，讓自然美感建立在扎實的專業基礎上。</p></div>
+          <div class="reveal delay-1"><span class="display italic text-4xl text-champagne">02.</span><div class="h-px bg-[#D7D0C9] my-5"></div><h4 class="editorial text-lg mb-4">化繁為簡</h4><p class="text-sm leading-[2.1] text-[#34453B] font-light">用清楚、容易理解的方式傳授技巧，讓初學者也能完成充滿質感的花藝作品。</p></div>
+          <div class="reveal delay-2"><span class="display italic text-4xl text-champagne">03.</span><div class="h-px bg-[#D7D0C9] my-5"></div><h4 class="editorial text-lg mb-4">勇於開始</h4><p class="text-sm leading-[2.1] text-[#34453B] font-light">每個人生階段都能重新探索興趣，從一朵花開始，擁抱未知的可能。</p></div>
+          <div class="reveal delay-3"><span class="display italic text-4xl text-champagne">04.</span><div class="h-px bg-[#D7D0C9] my-5"></div><h4 class="editorial text-lg mb-4">創作與分享</h4><p class="text-sm leading-[2.1] text-[#34453B] font-light">享受花材研究與創作，也珍惜與學員共同探索、分享成就感的每一刻。</p></div>
+        </div>
+        <div class="reveal mt-20 md:mt-28 border-y border-[#D7D0C9] py-11 text-center"><p class="editorial text-xl md:text-2xl">「用最簡單的方法，帶你完成最漂亮的作品。」</p><p class="text-[12px] tracking-[.22em] text-sage mt-5">花事的教學初心</p></div>
+      </div>
+    </section>
+
+<!-- 04 花事作品集 -->
+    <section id="portfolio" class="bg-cream py-24 md:py-36 px-6 md:px-12">
+      <div class="max-w-[1320px] mx-auto">
+        <div class="text-center reveal"><p class="eyebrow text-sage flex justify-center items-center gap-3"><span class="section-number">03</span> Selected works</p><h2 class="editorial text-[clamp(2rem,3.4vw,3.6rem)] mt-6">花藝作品，每一份心意的模樣。</h2><p class="text-sm text-[#34453B] font-light mt-6">花籃與花禮・生日花束・婚禮捧花・生活瓶花</p></div>
+        <p class="text-center text-xs mt-7 text-[#34453B] reveal">每一份花禮，都是花事用心完成的真實作品。</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 mt-14">
+          <button type="button" class="work-card img-with-fallback aspect-[3/4] reveal" data-full="photos01/1.1.png" data-title="繽紛花籃" aria-label="放大欣賞：繽紛花籃">
+            <div class="placeholder">Flower · Matter · Studio</div>
+            <img loading="lazy" decoding="async" src="photos01/1.1.png" alt="花事花藝作品：繽紛花籃" />
+            <span class="zoom-icon" aria-hidden="true">↗</span>
+            <span class="work-meta"><span class="eyebrow text-cream/80">01 · Floral design</span><span class="editorial block text-xl mt-2">繽紛花籃</span></span>
+          </button>
+          <button type="button" class="work-card img-with-fallback aspect-[3/4] reveal" data-full="photos01/2.png" data-title="玫瑰花籃" aria-label="放大欣賞：玫瑰花籃">
+            <div class="placeholder">Flower · Matter · Studio</div>
+            <img loading="lazy" decoding="async" src="photos01/2.png" alt="花事花藝作品：玫瑰花籃" />
+            <span class="zoom-icon" aria-hidden="true">↗</span>
+            <span class="work-meta"><span class="eyebrow text-cream/80">02 · Floral design</span><span class="editorial block text-xl mt-2">玫瑰花籃</span></span>
+          </button>
+          <button type="button" class="work-card img-with-fallback aspect-[3/4] reveal" data-full="photos01/20240707_184732.jpg" data-title="紫色瓶花" aria-label="放大欣賞：紫色瓶花">
+            <div class="placeholder">Flower · Matter · Studio</div>
+            <img loading="lazy" decoding="async" src="photos01/20240707_184732.jpg" alt="花事花藝作品：紫色瓶花" />
+            <span class="zoom-icon" aria-hidden="true">↗</span>
+            <span class="work-meta"><span class="eyebrow text-cream/80">03 · Floral design</span><span class="editorial block text-xl mt-2">紫色瓶花</span></span>
+          </button>
+          <button type="button" class="work-card img-with-fallback aspect-[3/4] reveal" data-full="photos01/20240817_媽咪生日花束.jpg" data-title="生日客製花束" aria-label="放大欣賞：生日客製花束">
+            <div class="placeholder">Flower · Matter · Studio</div>
+            <img loading="lazy" decoding="async" src="photos01/20240817_媽咪生日花束.jpg" alt="花事花藝作品：生日客製花束" />
+            <span class="zoom-icon" aria-hidden="true">↗</span>
+            <span class="work-meta"><span class="eyebrow text-cream/80">04 · Floral design</span><span class="editorial block text-xl mt-2">生日客製花束</span></span>
+          </button>
+          <button type="button" class="work-card img-with-fallback aspect-[3/4] reveal" data-full="photos01/1765952520749.jpg" data-title="白綠婚禮捧花" aria-label="放大欣賞：白綠婚禮捧花">
+            <div class="placeholder">Flower · Matter · Studio</div>
+            <img loading="lazy" decoding="async" src="photos01/1765952520749.jpg" alt="花事花藝作品：白綠婚禮捧花" />
+            <span class="zoom-icon" aria-hidden="true">↗</span>
+            <span class="work-meta"><span class="eyebrow text-cream/80">05 · Floral design</span><span class="editorial block text-xl mt-2">白綠婚禮捧花</span></span>
+          </button>
+          <button type="button" class="work-card img-with-fallback aspect-[3/4] reveal" data-full="photos01/1765952520771.jpg" data-title="紅色婚禮花束" aria-label="放大欣賞：紅色婚禮花束">
+            <div class="placeholder">Flower · Matter · Studio</div>
+            <img loading="lazy" decoding="async" src="photos01/1765952520771.jpg" alt="花事花藝作品：紅色婚禮花束" />
+            <span class="zoom-icon" aria-hidden="true">↗</span>
+            <span class="work-meta"><span class="eyebrow text-cream/80">06 · Floral design</span><span class="editorial block text-xl mt-2">紅色婚禮花束</span></span>
+          </button>
+          <button type="button" class="work-card img-with-fallback aspect-[3/4] reveal" data-full="photos01/243469.jpg" data-title="瀑布式新娘捧花" aria-label="放大欣賞：瀑布式新娘捧花">
+            <div class="placeholder">Flower · Matter · Studio</div>
+            <img loading="lazy" decoding="async" src="photos01/243469.jpg" alt="花事花藝作品：瀑布式新娘捧花" />
+            <span class="zoom-icon" aria-hidden="true">↗</span>
+            <span class="work-meta"><span class="eyebrow text-cream/80">07 · Floral design</span><span class="editorial block text-xl mt-2">瀑布式新娘捧花</span></span>
+          </button></div>
+        <p class="text-center text-xs tracking-[.1em] text-[#34453B] mt-9">點選圖片，欣賞大圖細節 <span aria-hidden="true">↗</span></p>
+      </div>
+    </section>
+
+    <!-- 為您而作的花藝提案 -->
+    <section id="core-products" class="bg-mist py-24 md:py-32 px-6 md:px-12" aria-labelledby="core-products-title">
+      <div class="max-w-[1320px] mx-auto">
+        <div class="text-center reveal">
+          <p class="eyebrow text-sage mb-5">Courses & custom flowers</p>
+          <h2 id="core-products-title" class="editorial text-[clamp(2rem,3.2vw,3.5rem)]">為您而作的花藝提案</h2>
+          <div class="w-12 h-px bg-champagne mx-auto mt-8"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6 mt-14">
+          <article class="service-card reveal p-7 md:p-9 flex flex-col items-start">
+            <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cream text-sage text-2xl"><i class="fa-solid fa-seedling" aria-hidden="true"></i></span>
+            <h3 class="editorial text-xl mt-7 mb-4">單堂花藝體驗課</h3>
+            <p class="text-sm leading-[2.15] font-light text-[#34453B]">依您的需求客製化花藝單堂體驗課，也可針對主要節日、目的為您和您的家人、朋友量身訂製花藝課程</p>
+            <div class="mt-auto pt-8"><a href="https://flower-matter-test-b-20261014.bronzeowl8.chatgpt.site/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 text-xs border-b border-sage pb-2">探索單堂體驗課 <span aria-hidden="true">↗</span><span class="sr-only">（於新分頁開啟）</span></a></div>
+          </article>
+          <article class="service-card reveal delay-1 p-7 md:p-9 flex flex-col items-start">
+            <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cream text-sage text-2xl"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+            <h3 class="editorial text-xl mt-7 mb-4">專業花藝系列課程</h3>
+            <p class="text-sm leading-[2.15] font-light text-[#34453B]">由淺至深，從理論到實踐，根據您的需求設計，一步步帶您從花藝新手至專業的花藝設計師</p>
+            <div class="mt-auto pt-8"><a href="#booking" class="inline-flex items-center gap-3 text-xs border-b border-sage pb-2">諮詢專業課程 <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="service-card reveal delay-2 p-7 md:p-9 flex flex-col items-start">
+            <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cream text-sage text-2xl"><i class="fa-solid fa-gift" aria-hidden="true"></i></span>
+            <h3 class="editorial text-xl mt-7 mb-4">客製化花禮、專業場地佈置</h3>
+            <p class="text-sm leading-[2.15] font-light text-[#34453B]">依您的需求提供預算內最精緻的服務，不論是送禮或是場地佈置，讓您個人想要的風格，想表達的心意能完美呈現。</p>
+            <div class="mt-auto pt-8"><a href="#booking" class="inline-flex items-center gap-3 text-xs border-b border-sage pb-2">洽詢客製服務 <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 聯絡我與需求表單 -->
+    <section id="contact-me" class="bg-cream py-24 md:py-32 px-6 md:px-12" aria-labelledby="contact-me-title">
+      <div class="max-w-[1320px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="reveal">
+          <p class="eyebrow text-sage mb-5">Contact me</p>
+          <h2 id="contact-me-title" class="editorial text-[clamp(2rem,3.2vw,3.5rem)]">聯絡我</h2>
+          <p class="text-sm leading-[2.15] font-light text-[#34453B] mt-6">想了解花藝課程、訂製花禮或討論場地佈置？歡迎透過 LINE 聯絡花事，分享您的想法。</p>
+          <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-9" aria-label="社群聯絡方式">
+            <li><a href="https://line.me/ti/p/WQzg3KWYMd" target="_blank" rel="noopener noreferrer" class="service-card flex flex-col items-center gap-3 px-3 py-6 text-sage"><i class="fa-brands fa-line text-3xl" aria-hidden="true"></i><span class="text-xs tracking-wider">LINE</span><span class="text-[11px] text-[#34453B]">立即聯絡</span><span class="sr-only">（於新分頁開啟）</span></a></li>
+            <li><div class="flex flex-col items-center gap-3 px-3 py-6 border border-[#D7D0C9] bg-mist text-[#34453B]"><i class="fa-brands fa-facebook text-3xl" aria-hidden="true"></i><span class="text-xs tracking-wider">Facebook</span><span class="text-[11px]">連結待設定</span></div></li>
+            <li><div class="flex flex-col items-center gap-3 px-3 py-6 border border-[#D7D0C9] bg-mist text-[#34453B]"><i class="fa-brands fa-linkedin text-3xl" aria-hidden="true"></i><span class="text-xs tracking-wider">LinkedIn</span><span class="text-[11px]">連結待設定</span></div></li>
+            <li><div class="flex flex-col items-center gap-3 px-3 py-6 border border-[#D7D0C9] bg-mist text-[#34453B]"><i class="fa-brands fa-github text-3xl" aria-hidden="true"></i><span class="text-xs tracking-wider">GitHub</span><span class="text-[11px]">連結待設定</span></div></li>
+          </ul>
+        </div>
+        <div class="reveal delay-1 bg-cream border border-[#D7D0C9] p-8 md:p-12">
+          <span class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cream text-sage text-2xl"><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i></span>
+          <h3 class="editorial text-2xl mt-7">填寫需求表單</h3>
+          <p class="text-sm leading-[2.15] font-light text-[#34453B] mt-5">將您的花藝需求與想法告訴我們，讓花事為您規劃合適的課程或客製服務。</p>
+          <a class="btn btn-dark mt-8" href="https://forms.gle/Hn3fiDGQWygnshpN8" target="_blank" rel="noopener noreferrer">填寫需求表單 <span class="arrow" aria-hidden="true">↗</span><span class="sr-only">（於新分頁開啟）</span></a>
+          <p class="text-xs text-[#34453B] mt-4">將於新分頁開啟 Google 表單</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 預約諮詢 -->
+    <section id="booking" class="relative py-28 md:py-40 overflow-hidden bg-cream px-6">
+      <div class="absolute left-[-110px] top-[-80px] w-[380px] h-[380px] rounded-full border border-[#D7D0C9]/70 pointer-events-none"></div>
+      <div class="absolute right-[-130px] bottom-[-160px] w-[450px] h-[450px] rounded-full border border-[#D7D0C9]/70 pointer-events-none"></div>
+      <div class="max-w-[850px] mx-auto text-center relative reveal"><p class="eyebrow text-sage mb-7">Booking & consultation</p><span class="display italic text-5xl text-champagne">✳</span><h2 class="editorial text-[clamp(2.1rem,4vw,4rem)] leading-[1.65] mt-5">每一份美好，<br />都從一場相遇開始。</h2><div class="w-12 h-px bg-champagne mx-auto my-8"></div><p class="text-sm md:text-base text-[#34453B] leading-[2.3] font-light max-w-[610px] mx-auto">無論是客製花禮、空間佈置，或想開啟一段花藝學習旅程，都歡迎與花事聊聊您的想法。</p><a class="btn btn-dark mt-10" href="https://calendar.app.google/YuYJ1y4CuUhhYnaC8" target="_blank" rel="noopener noreferrer">預約花藝諮詢 <span class="arrow">↗</span></a><p class="text-xs text-[#34453B] mt-5">將於新分頁開啟 Google Calendar 預約頁面</p></div>
+    </section>
+
+    <!-- 06 聯絡 -->
+    <section id="contact" class="bg-cream pt-24 md:pt-32">
+      <div class="max-w-[1320px] mx-auto px-6 md:px-12 text-center reveal"><p class="eyebrow text-sage mb-6">Floral moments</p><h2 class="editorial text-[clamp(2rem,3.2vw,3.5rem)]">花的日常，也可以是您的日常。</h2><p class="display italic text-sage text-lg mt-5">A little floral inspiration, every day.</p></div>
+      <div class="mt-12 md:mt-16 grid grid-cols-4 gap-1.5 md:gap-3 max-w-[1440px] px-3 md:px-12 mx-auto" aria-label="花事精選作品照片組合">
+        <div class="img-with-fallback image-wrap aspect-[3/4]"><div class="placeholder">Flowers</div><img loading="lazy" alt="花事白綠婚禮捧花" src="photos01/1765952520749.jpg" /></div>
+        <div class="img-with-fallback image-wrap aspect-[3/4]"><div class="placeholder">Studio</div><img loading="lazy" alt="花事玫瑰花籃" src="photos01/2.png" /></div>
+        <div class="img-with-fallback image-wrap aspect-[3/4]"><div class="placeholder">Nature</div><img loading="lazy" alt="花事紅色婚禮花束" src="photos01/1765952520771.jpg" /></div>
+        <div class="img-with-fallback image-wrap aspect-[3/4]"><div class="placeholder">Bloom</div><img loading="lazy" alt="花事紫色瓶花" src="photos01/20240707_184732.jpg" /></div>
+      </div>
+      <div class="text-center px-6 mt-11 mb-24 md:mb-32"><a class="btn" href="https://line.me/ti/p/WQzg3KWYMd" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-line" aria-hidden="true"></i> 在 LINE 與花事聊聊 <span class="arrow" aria-hidden="true">↗</span><span class="sr-only">（於新分頁開啟）</span></a></div>
+      <footer class="bg-ink text-[#F1EFEC] px-6 md:px-12 pt-16 pb-8"><div class="max-w-[1320px] mx-auto"><div class="flex flex-col md:flex-row gap-12 md:justify-between md:items-end"><div><p class="editorial text-3xl tracking-[.2em]">花事</p><p class="display tracking-[.12em] text-sm mt-3">Flower · Matter · Studio</p><p class="text-xs text-cream/65 mt-6 tracking-[.12em]">讓生活與花相遇，讓美好悄然綻放。</p></div><div class="flex flex-wrap gap-x-7 gap-y-4 text-xs text-cream/70 tracking-[.12em]"><a href="#about" class="hover:text-cream">關於花事</a><a href="#core-products" class="hover:text-cream">花藝服務</a><a href="#portfolio" class="hover:text-cream">作品集</a><a href="#booking" class="hover:text-cream">預約諮詢</a></div></div><div class="h-px bg-cream/20 my-11"></div><div class="flex flex-col sm:flex-row justify-between gap-3 text-[10px] text-cream/50 tracking-[.1em]"><span>© <span id="year"></span> Flower · Matter · Studio. All rights reserved.</span><span>Designed with nature, made with heart.</span></div></div></footer>
+    </section>
+  </main>
+
+  <!-- 大圖燈箱：Escape 可關閉、點擊遮罩可關閉 -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="花藝作品圖片預覽" aria-hidden="true" inert>
+    <button type="button" id="lightbox-close" class="lightbox-close" aria-label="關閉大圖預覽">×</button>
+    <figure class="flex flex-col items-center gap-4"><img id="lightbox-image" alt="" /><figcaption id="lightbox-caption" class="text-cream/80 text-sm tracking-widest"></figcaption></figure>
+  </div>
+
+  <script>
+    'use strict';
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const $ = (selector) => document.querySelector(selector);
+
+    // 圖片下載失敗：顯示柔和的底圖與文字，不出現破圖圖示
+    document.querySelectorAll('.img-with-fallback img').forEach(img => {
+      const fail = () => img.classList.add('image-failed');
+      img.addEventListener('error', fail);
+      if (img.complete && img.naturalWidth === 0) fail();
+    });
+
+    // 導覽列：捲動時改變背景與文字色彩
+    const nav = $('#site-nav');
+    function syncNavbar() {
+      const scrolled = window.scrollY > 40;
+      nav.classList.toggle('is-scrolled', scrolled);
+      nav.classList.toggle('text-cream', !scrolled);
+      nav.classList.toggle('text-forest', scrolled);
+    }
+    window.addEventListener('scroll', syncNavbar, { passive:true });
+    syncNavbar();
+
+    // 手機導覽：同步 aria-expanded、inert 與選單可見狀態
+    const menuButton = $('#menu-toggle');
+    const mobileMenu = $('#mobile-menu');
+    function toggleMenu(force) {
+      const open = typeof force === 'boolean' ? force : menuButton.getAttribute('aria-expanded') !== 'true';
+      menuButton.setAttribute('aria-expanded', String(open));
+      menuButton.setAttribute('aria-label', open ? '關閉導覽選單' : '開啟導覽選單');
+      mobileMenu.classList.toggle('is-open', open);
+      mobileMenu.inert = !open;
+    }
+    menuButton.addEventListener('click', () => toggleMenu());
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => toggleMenu(false)));
+    window.addEventListener('resize', () => { if (window.innerWidth >= 1024) toggleMenu(false); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') toggleMenu(false); });
+
+    // 進場動畫：支援不具備 IntersectionObserver 的舊瀏覽器
+    const reveals = document.querySelectorAll('.reveal');
+    if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+      reveals.forEach(el => el.classList.add('is-visible'));
+    } else {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+        });
+      }, { threshold:.1, rootMargin:'0px 0px -35px 0px' });
+      reveals.forEach(el => observer.observe(el));
+    }
+
+    // 作品大圖：鍵盤 Escape、按鈕和遮罩均可關閉，並回到觸發按鈕
+    const lightbox = $('#lightbox');
+    const lightboxImage = $('#lightbox-image');
+    const lightboxCaption = $('#lightbox-caption');
+    let previousFocus = null;
+    function closeLightbox() {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightbox.inert = true;
+      lightboxImage.removeAttribute('src');
+      document.body.classList.remove('modal-open');
+      previousFocus?.focus();
+    }
+    document.querySelectorAll('.work-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const preview = card.querySelector('img');
+        if (preview?.classList.contains('image-failed')) return;
+        previousFocus = card;
+        lightboxImage.src = card.dataset.full;
+        lightboxImage.alt = preview.alt;
+        lightboxCaption.textContent = card.dataset.title + '｜花事作品';
+        lightbox.inert = false;
+        lightbox.setAttribute('aria-hidden', 'false');
+        lightbox.classList.add('is-open');
+        document.body.classList.add('modal-open');
+        $('#lightbox-close').focus();
+      });
+    });
+    $('#lightbox-close').addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('is-open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'Tab') {
+        e.preventDefault(); $('#lightbox-close').focus();
+      }
+    });
+    lightboxImage.addEventListener('error', () => { lightboxCaption.textContent = '圖片暫時無法載入，請稍後再試。'; });
+
+    $('#year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
